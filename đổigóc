@@ -1,0 +1,17 @@
+# t-i-li-u-t-p-code
+lưu lại những gì đã học code
+#include <stdio.h>
+#include <math.h>
+
+main() {
+	
+	float gocradian, gocdo, gtcosin;
+	
+	printf("Nhap gia tri cosin cua 1 goc: ");
+	scanf("%f", &gtcosin);
+	
+	gocradian = acos(gtcosin);
+	gocdo = (180*gocradian)/M_PI;
+	
+	printf("acos(%f) = %f", gocradian, gocdo);
+}

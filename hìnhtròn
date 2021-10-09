@@ -1,0 +1,15 @@
+# t-i-li-u-t-p-code
+lưu lại những gì đã học code
+#include <stdio.h>
+#include <stdio.h>
+int main () {
+	float r, chuvi, dientich;
+	
+	printf("nhap r:");
+	scanf("%f", &r);
+	
+	chuvi = 2 * r * 3.14;
+	dientich = r * r * 3.14;
+	
+	printf("chuvi: %f, dientich: %f", chuvi, dientich);
+	}

@@ -1,0 +1,21 @@
+# t-i-li-u-t-p-code
+lưu lại những gì đã học code
+/* nhap vao hai doan thang [a,b] va [c,d].
+cho biet hai doan thang co giao nhau khong?*/
+
+#include<stdio.h>
+
+main(){
+	int a, b, c, d;
+	
+	printf("Nhap a, b, c, d: ");
+	scanf("%d %d %d %d", &a, &b, &c, &d);
+	
+	if (a<=c && c<=b)
+		printf("hai doan thang giao nhau");
+	else
+		if (c<=a && a<=d)
+			printf("hai doan thang giao nhau");
+		else
+			printf("hai doan thang khong giao nhau");
+	}

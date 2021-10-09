@@ -1,0 +1,18 @@
+# t-i-li-u-t-p-code
+lưu lại những gì đã học code
+/* Nhap vao chieu dai 2 canh cua mot hinh chu nhat.
+tinh chu vi va dien tich cua hinh chu nhat do.*/
+
+#include <stdio.h>
+
+main() {
+	int chieuDai, chieuRong, chuVi, dienTich;
+	
+	printf("Nhap chieu dai va chieu rong: ");
+	scanf("%d %d", &chieuDai, &chieuRong);
+	
+	chuVi = (chieuDai + chieuRong) * 2;
+	dienTich = chieuDai * chieuRong;
+	
+	printf("chu vi la: %d\ndien tich la: %d", chuVi, dienTich);
+}

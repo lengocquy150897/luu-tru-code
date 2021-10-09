@@ -1,0 +1,19 @@
+# luu-tru-code
+lưu lại những gì đã học code
+#include <stdio.h>
+#include <math.h>
+
+main() {
+	int gocdo;
+	float gocradian, gtsin, gtcos, tong;
+	
+	printf("Nhap so do 1 goc: ");
+	scanf("%d", &gocdo);
+	
+	gocradian = gocdo * M_PI/180;
+	gtsin = sin(gocradian);
+	gtcos = cos(gocradian);
+	tong = (gtsin*gtsin) + (gtcos*gtcos);
+	
+	printf("(sin(%d)^2) + (cosin(%d)^2)	= %f", gocdo, gocdo, tong);
+}

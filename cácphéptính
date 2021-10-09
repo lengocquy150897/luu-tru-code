@@ -1,0 +1,34 @@
+# luu-tru-code
+lưu lại những gì đã học code
+#include<stdio.h>
+
+main(){
+	int a, b, c;
+	char pt;
+	
+	printf("Nhap a b va phep toan: ");
+	scanf("%d %c %d", &a, &pt, &b);
+	
+	switch (pt){
+	
+		case  '+':
+			printf(" %d + %d = %d", a, b, a + b);break;
+		
+		case  '-':
+			printf(" %d - %d = %d", a, b, a - b);break;	
+		
+		case  '*':
+			printf(" %d * %d = %d", a, b, a * b);break;	
+		
+		case  '/':
+			if(b!=0)
+      			printf("%d/%d = %d" , a, b, a / b);
+ 			else
+    			printf("khong the thuc hien phep tinh");break;
+		
+		case  '%':
+			printf(" %d %% %d = %d", a, b, a % b);break;	
+	default:
+			printf("khong the thuc hien phep tinh");
+	}
+}		

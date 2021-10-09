@@ -1,0 +1,17 @@
+// nhap ki tu chu thuong, nhap chu hoa tuong ung.
+// khoang cach ki tu chu hoa den ki tu chu thuong la 32.
+
+#include <stdio.h>
+
+main() {
+	char kiTuHoa, kiTuThuong;
+	
+	printf("Nhap ki tu in hoa: ");
+	scanf("%c", &kiTuHoa);
+	
+	kiTuThuong = kiTuHoa + 32;
+	
+	printf("ki tu thuong: %c", kiTuThuong);
+	
+	
+}

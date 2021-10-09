@@ -1,0 +1,17 @@
+# luu-tru-code
+lưu lại những gì đã học code
+// tim so lon trong hai so
+
+#include <stdio.h>
+
+main() {
+	int a, b, max;
+	printf("Nhap hai so nguyen: ");
+	scanf("%d %d", &a, &b);
+	if(a>b)
+		max = a;
+	else
+		max = b;
+	
+	printf("So lon nhat la: %d", max);
+}

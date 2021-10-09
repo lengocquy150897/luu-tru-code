@@ -1,0 +1,40 @@
+# t-i-li-u-t-p-code
+lưu lại những gì đã học code
+/*Nhap toa do 3 diem A B C trong khong gian 2 chieu. CHo biet 3 diem A B C co tao thanh tam giac khong? neu la tam giac 
+thi ABC la tam giac gi trong cac loai tam giac sau:
+Tam giac deu. 
+Tam giac vuong can. 
+tam giac can. 
+tam giac vuong 
+tam giac thuong*/
+
+#include <stdio.h>
+#include <math.h>
+main() {
+	double a, b, c, d, e, f, AB, AC, BC;/* A(a,b) B(c,d) C(x,y)*/
+	printf("Nhap a b c d x y ");
+	scanf("%f %f %f %f %f %f", &a, &b, &c, &d, &e, &f);
+	AB= sqrt( pow((c-a),2)+pow((d-b),2));
+	AC= sqrt( pow((e-a),2)+pow((f-b),2));
+	BC= sqrt( pow((e-c),2)+pow((f-d),2));
+	
+	if (AB==AC && AC==BC && BC==AB) 
+    	printf("Tam giac nay la tam giac deu");
+	
+		if (AB*AB == AC*AC + BC*BC ||
+			AC*AC == AB*AB + BC*BC ||
+			BC*BC == AB*AB + AC*AC );
+			printf("Tam giac nay la tam giac vuong");
+	
+				if (AB==AC || AC==BC || BC==AB &&
+				AB*AB == AC*AC + BC*BC ||
+				AC*AC == AB*AB + BC*BC ||
+				BC*BC == AB*AB + AC*AC)
+				printf("Tam giac nay la tam giac vuong can");
+							
+					if (AB==AC || AC==BC || BC==AB)
+					printf("Tam giac nay la tam giac can");
+				
+					
+}
+

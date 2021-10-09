@@ -1,0 +1,21 @@
+# luu-tru-code
+lưu lại những gì đã học code
+/* nhap 1 so thuc. cho biet do la so duong, am
+hay so khong*/
+
+#include <stdio.h>
+
+main(){
+	float n;
+	
+	printf("Nhap 1 so thuc: ");
+	scanf("%f", &n);
+	
+	if (n>0)
+		printf("la so duong");
+	else
+		if (n<0)
+			printf("la so am");
+		else
+			printf("la so khong");
+}

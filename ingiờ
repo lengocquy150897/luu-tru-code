@@ -1,0 +1,20 @@
+# t-i-li-u-t-p-code
+lưu lại những gì đã học code
+/* nhap m (so nguyen) la so giay tinh tu luc 0:00 cua mot ngay
+den mot thoi diem nao do trong ngay. cho biet luc do la may gio may phut may giay*/
+
+
+#include <stdio.h>
+
+main(){
+	int m, h, p, g;
+	
+	printf("Nhap so giay: ");
+	scanf("%d", &m);
+	
+	h = m/3600;
+	p = (m%3600)/60;
+	g = m%60;
+	
+	printf("%02d:%02d:%02d", h, p, g);
+}
